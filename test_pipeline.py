@@ -62,6 +62,18 @@ def test_answers_citing_unknown_notes_go_to_review():
     assert bank[2]["answer"] is None
 
 
+def test_answer_step_sees_the_exact_quote_not_just_the_summary():
+    # Regression: a fact summary dropped an email address that was in its quote,
+    # so the answering step wrongly said no address was given.
+    notes = [{"id": "N1", "source": "security.html", "topic": "contact",
+              "fact": "Security issues can be reported via email.",
+              "quote": "Email our security team at\nsecurity@halden.example."}]
+    llm = fake_llm([json.dumps({"status": "partial", "answer": "security@halden.example",
+                                "note_ids": ["N1"], "reason": "No named person."})])
+    pipeline.build_answer_bank(llm, [{"id": "Q7", "text": "Security contact?"}], notes)
+    assert "security@halden.example" in llm.prompts[0]
+
+
 def test_full_run_writes_all_three_outputs(tmp_path):
     pages = pipeline.load_saved_pages()
     questionnaire = json.loads((pipeline.ROOT / "questionnaire.json").read_text(encoding="utf-8"))

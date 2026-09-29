@@ -1,0 +1,114 @@
+[
+  {
+    "id": "N1",
+    "source": "about.html",
+    "topic": "company location",
+    "fact": "Halden Logistics is headquartered in Rotterdam, the Netherlands, with additional offices in Berlin, Germany and Chicago, United States.",
+    "quote": "Halden Logistics B.V. is headquartered in Rotterdam, the Netherlands, with additional\noffices in Berlin, Germany and Chicago, United States."
+  },
+  {
+    "id": "N2",
+    "source": "about.html",
+    "topic": "certifications and audits",
+    "fact": "The company began pursuing SOC 2 compliance in 2023.",
+    "quote": "In 2023 we began our SOC 2 journey, and we have grown\nto 340 employees across three countries."
+  },
+  {
+    "id": "N3",
+    "source": "careers.html",
+    "topic": "company location",
+    "fact": "The company is legally registered as Halden Logistics B.V.",
+    "quote": "\u00a9 2026 Halden Logistics B.V. |"
+  },
+  {
+    "id": "N4",
+    "source": "careers.html",
+    "topic": "company location",
+    "fact": "Halden Logistics has an office in Rotterdam.",
+    "quote": "a dog-friendly Rotterdam office"
+  },
+  {
+    "id": "N5",
+    "source": "careers.html",
+    "topic": "company location",
+    "fact": "Halden Logistics has an office in Chicago.",
+    "quote": "Our Chicago team just moved into a new space in the West Loop."
+  },
+  {
+    "id": "N6",
+    "source": "careers.html",
+    "topic": "company location",
+    "fact": "Halden Logistics has staff/roles based in Berlin.",
+    "quote": "Security Engineer (Berlin): help us stay obsessed with keeping customer data safe\nwith military-grade protection."
+  },
+  {
+    "id": "N7",
+    "source": "security.html",
+    "topic": "Certifications",
+    "fact": "Halden has completed a SOC 2 Type II audit covering the period January 1 to December 31, 2025, performed by an independent auditor.",
+    "quote": "Halden has completed a SOC 2 Type II audit covering the period January 1 to December 31,\n2025, performed by an independent auditor."
+  },
+  {
+    "id": "N8",
+    "source": "security.html",
+    "topic": "Certifications",
+    "fact": "The full SOC 2 report can be requested under a non-disclosure agreement.",
+    "quote": "Customers and prospects can request the full\nreport under a non-disclosure agreement."
+  },
+  {
+    "id": "N9",
+    "source": "security.html",
+    "topic": "Encryption",
+    "fact": "Customer data is encrypted at rest using AES-256.",
+    "quote": "All customer data is encrypted at rest using AES-256 and in transit using TLS 1.2 or\nhigher."
+  },
+  {
+    "id": "N10",
+    "source": "security.html",
+    "topic": "Encryption",
+    "fact": "Customer data is encrypted in transit using TLS 1.2 or higher.",
+    "quote": "All customer data is encrypted at rest using AES-256 and in transit using TLS 1.2 or\nhigher."
+  },
+  {
+    "id": "N11",
+    "source": "security.html",
+    "topic": "Data retention",
+    "fact": "Customer shipment data is retained for 24 months after a customer's contract ends.",
+    "quote": "We retain customer shipment data for 24 months after a customer's contract ends."
+  },
+  {
+    "id": "N12",
+    "source": "security.html",
+    "topic": "Incident response",
+    "fact": "Affected customers are notified within 72 hours of confirmation of a security breach affecting customer data.",
+    "quote": "If we confirm a security breach affecting customer data, we notify affected customers\nwithin 72 hours of confirmation."
+  },
+  {
+    "id": "N13",
+    "source": "security.html",
+    "topic": "Third parties",
+    "fact": "Halden works with cloud and infrastructure partners.",
+    "quote": "We work with carefully selected, industry-leading cloud and infrastructure partners who\nshare our commitment to security."
+  },
+  {
+    "id": "N14",
+    "source": "security.html",
+    "topic": "Security contact",
+    "fact": "Security issues can be reported via email to the security team.",
+    "quote": "Found a security issue? Email our security team at security@halden.example."
+  },
+  {
+    "id": "N15",
+    "source": "security.html",
+    "topic": "Security contact",
+    "fact": "The security team aims to respond within two business days.",
+    "quote": "We aim to\nrespond within two business days."
+  },
+  {
+    "id": "N16",
+    "source": "security.html",
+    "topic": "Company location",
+    "fact": "The company is registered as Halden Logistics B.V.",
+    "quote": "\u00a9 2026 Halden Logistics B.V. |"
+  }
+]

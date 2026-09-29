@@ -220,7 +220,13 @@ def extract_facts(llm: LLM, pages: dict[str, str]) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def build_answer_bank(llm: LLM, questions: list[dict], notes: list[dict]) -> list[dict]:
-    notes_text = "\n".join(f"[{n['id']}] ({n['source']}) {n['fact']}" for n in notes) or "(no notes)"
+    # Pass the verified quote along with the fact. The fact is the model's own
+    # summary and can drop details (an early run summarized away the security
+    # team's email address); the quote is the page's exact words.
+    notes_text = "\n".join(
+        f"[{n['id']}] ({n['source']}) {n['fact']}\n    Quote: \"{' '.join(n['quote'].split())}\""
+        for n in notes
+    ) or "(no notes)"
     known_ids = {n["id"] for n in notes}
     bank = []
     for q in questions:

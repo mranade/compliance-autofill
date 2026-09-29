@@ -72,6 +72,11 @@ Live mode checks `robots.txt` first and skips pages that disallow it.
   the reply matches it. A parse-and-retry step is kept as a safety net.
 - **Quotes are checked in code.** Every extracted fact must include a
   word-for-word quote, and a fact is dropped if that quote isn't on the page.
+- **The answering step sees the evidence, not just a summary.** Each note is
+  passed on with its verified quote. The first real run showed why: a fact
+  summary dropped the security team's email address that its quote contained,
+  and the answer claimed no address was given. That run is kept in
+  `docs/sample-run/`.
 - **Answers must cite notes.** An answer that doesn't cite a real note is
   marked "needs review" instead of being trusted.
 - **"Not found" is a valid answer.** Several questions are deliberately
