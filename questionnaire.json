@@ -1,0 +1,14 @@
+{
+  "title": "Vendor security due-diligence questionnaire",
+  "vendor": "Halden Logistics (fictional)",
+  "questions": [
+    {"id": "Q1", "text": "In which country is the vendor headquartered?"},
+    {"id": "Q2", "text": "Does the vendor hold a current SOC 2 report? If so, which type and for what period?"},
+    {"id": "Q3", "text": "How long does the vendor retain customer data after the contract ends?"},
+    {"id": "Q4", "text": "Within what timeframe does the vendor notify customers of a confirmed data breach?"},
+    {"id": "Q5", "text": "List the subprocessors (third parties) that process customer data on the vendor's behalf."},
+    {"id": "Q6", "text": "Is customer data encrypted at rest? If so, with what standard?"},
+    {"id": "Q7", "text": "Provide the name and contact details of the vendor's designated security contact."},
+    {"id": "Q8", "text": "Does the vendor carry cyber liability insurance? If so, what is the coverage amount?"}
+  ]
+}

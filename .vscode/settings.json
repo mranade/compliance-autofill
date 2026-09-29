@@ -1,0 +1,12 @@
+{
+  // The setup task creates .venv in the project root; VS Code's Python
+  // extension picks it up automatically. If it asks, choose ".venv".
+  "python.terminal.activateEnvironment": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["test_pipeline.py"],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  // Press F5 with "Run pipeline" selected. First time only: run the
+  // "Set up project" task (Terminal > Run Task) and put your key in .env.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run pipeline",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": { "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe" },
+      "program": "${workspaceFolder}/pipeline.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONUTF8": "1" },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run pipeline on live URLs",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "windows": { "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe" },
+      "program": "${workspaceFolder}/pipeline.py",
+      "args": ["--live", "${input:urls}"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONUTF8": "1" },
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "urls",
+      "type": "promptString",
+      "description": "Page URL to fetch (checks robots.txt first)",
+      "default": "https://example.com/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  // Terminal > Run Task... to use these.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Set up project",
+      "detail": "First run: creates .venv, installs dependencies, creates .env for your API key",
+      "type": "shell",
+      "command": "./scripts/setup.sh",
+      "windows": {
+        "command": "powershell",
+        "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\scripts\\setup.ps1"]
+      },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "Run pipeline",
+      "type": "shell",
+      "command": ".venv/bin/python pipeline.py",
+      "windows": { "command": ".venv\\Scripts\\python.exe pipeline.py" },
+      "options": { "cwd": "${workspaceFolder}", "env": { "PYTHONUTF8": "1" } },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run tests",
+      "detail": "Uses a fake model: no API key or network needed",
+      "type": "shell",
+      "command": ".venv/bin/python -m pytest -q test_pipeline.py",
+      "windows": { "command": ".venv\\Scripts\\python.exe -m pytest -q test_pipeline.py" },
+      "options": { "cwd": "${workspaceFolder}", "env": { "PYTHONUTF8": "1" } },
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Open filled questionnaire",
+      "detail": "Opens output/filled_questionnaire.md in a Markdown preview",
+      "type": "shell",
+      "command": "code output/filled_questionnaire.md",
+      "windows": { "command": "code output\\filled_questionnaire.md" },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}
