@@ -1,7 +1,7 @@
 # Compliance autofill
 
-Companion code for the tutorial *From web pages to a filled compliance
-questionnaire*. It fills out a vendor security questionnaire from the vendor's
+Companion code for the tutorial
+**[From web pages to a filled compliance questionnaire](TUTORIAL.md)**. It fills out a vendor security questionnaire from the vendor's
 own web pages, cites a source for every answer, and flags anything it can't
 support for a human to review.
 
